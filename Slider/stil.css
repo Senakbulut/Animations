@@ -1,0 +1,70 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(blue.jpg);
+    background-size: cover;
+
+}
+.kapsayici{
+    max-width: 900px;
+    position: relative;
+    margin: auto ;
+    
+}
+.resim{
+    width: 100%;
+    display: none;
+    border: solid whitesmoke 5px;
+    border-radius: 5px;
+}
+
+img{
+    width: 100%;
+}
+.ileri,.geri{
+    position: absolute;
+    background: darkgray;
+    opacity: 0.6;
+    font-size: 20px;
+    padding: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.aktif{
+    display: block;
+    animation: fade .7s ease;
+}
+@keyframes fade{
+    0%{opacity: .5;}
+    100%{opacity: 1;}
+}
+.ileri{
+    right: 0;
+}
+.geri{
+    left: 0;
+}
+ul{
+    list-style: none;
+    text-align: center;
+}
+ul li{
+    background: darkgray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.aktiflist{
+    background: dimgray;
+}
