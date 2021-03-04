@@ -1,0 +1,50 @@
+@keyframes highFive {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+@keyframes sayBye{
+    20%,40%,60%,80%{
+        transform: rotate(-10deg);
+    }
+    10%,30%,50%,70%,90%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+}  
+#demo{
+    text-align: center;
+}
+button{
+    margin-bottom: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.hand{
+    font-size: 70px;
+    display: inline-block;
+}
+/* .shake-enter-active{
+    animation: highFive 0.5s both;
+}
+.shake-leave-active{
+    animation: sayBye 2s both;
+} */
+ .shake-enter-active{
+    animation:  rollIn 0.5s both; /*farklı css dosyalarından da animasyın ekleyebiliriz*/
+ }
+ .shake-leave-active{
+    animation:  hinge 0.5s both;
+ }

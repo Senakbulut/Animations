@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+</head>
+<body> 
+    <div id="demo">
+        <button @click="show =! show">
+            <span v-if='show'>Say Bye</span>
+            <span v-else="show">High five</span>
+        </button>
+        <transition name="shake">
+        <div class="hand" v-if="show">✋</div>
+        </transition>
+    </div>
+    <script src="vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
